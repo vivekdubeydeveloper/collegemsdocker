@@ -1,0 +1,353 @@
+{
+	"variables": [],
+	"info": {
+		"name": "collegems",
+		"_postman_id": "036a6f48-532a-e7bb-46fe-07cd6e72d78a",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getstudents",
+			"request": {
+				"url": "http://localhost:8083/student/api/v1/students",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "getstudentsapi",
+			"request": {
+				"url": "http://localhost:8080/student/api/v1/students",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic Y29sbGVnZWFwaTpDb2xsZWdlQXBpQDEyMzQ1",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "getkafkatransaction",
+			"request": {
+				"url": "http://localhost:8083/student/api/v1/transactions/e8b709d4-e809-43d8-bbeb-d987285747b1",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "getsteacher",
+			"request": {
+				"url": "http://localhost:8082/teacher/api/v1/teachers",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "getsteacherapi",
+			"request": {
+				"url": "http://localhost:8080/teacher/api/v1/teachers",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "getsteachersubject",
+			"request": {
+				"url": "http://localhost:8082/teacher/api/v1/teachers/1/subjects",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "getsteachersubjectapi",
+			"request": {
+				"url": "http://localhost:8080/teacher/api/v1/teachers/1/subjects",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "getteacherbyid",
+			"request": {
+				"url": "http://localhost:8082/teacher/api/v1/teachers/5",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "getteacherbyidapi",
+			"request": {
+				"url": "http://localhost:8080/teacher/api/v1/teachers/3",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "getsubjectbyid",
+			"request": {
+				"url": "http://localhost:8081/subject/api/v1/subjects/1",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "getstudentbyid",
+			"request": {
+				"url": "http://localhost:8083/student/api/v1/students/1",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "addsubject",
+			"request": {
+				"url": "http://localhost:8081/subject/api/v1/subjects",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"Hindi\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "addstudent",
+			"request": {
+				"url": "http://localhost:8083/student/api/v1/students",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"Ranjan\",\n\t\"address\":\"D-405,Ghansoli\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "updatestudent",
+			"request": {
+				"url": "http://localhost:8083/student/api/v1/students",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n        \"rollno\": 4,\n        \"name\": \"Mukesh\",\n        \"address\": \"B-405,Mumbai\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "addteacher",
+			"request": {
+				"url": "http://localhost:8082/teacher/api/v1/teachers",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"Sunil Pandey\",\n\t\"address\":\"Ghaziabad\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "addteachersubject",
+			"request": {
+				"url": "http://localhost:8080/teachers/3/subjects",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"subjectId\":2\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "getteachersubject",
+			"request": {
+				"url": "http://localhost:8080/teachers/3/subjects",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"subjectId\":2\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "updatesubject",
+			"request": {
+				"url": "",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "updateteacher",
+			"request": {
+				"url": "http://localhost:8082/teacher/api/v1/teachers",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"empid\":11,\n\t\"name\":\"Sumit1\",\n\t\"address\":\"Delhi\",\n\t\"subjectId\":2\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "updateteachersubject",
+			"request": {
+				"url": "http://localhost:8082/teacher/api/v1/teachers",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"empid\":11,\n\t\"name\":\"Sumit1\",\n\t\"address\":\"Delhi\",\n\t\"subjectId\":2\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "deletesubjectbyid",
+			"request": {
+				"url": "http://localhost:8081/subject/api/v1/subjects/23",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "deleteteacherbyid",
+			"request": {
+				"url": "http://localhost:8082/teacher/api/v1/teachers/11",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "deletestudentbyid",
+			"request": {
+				"url": "http://localhost:8083/student/api/v1/students/6",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "getsubject",
+			"request": {
+				"url": "http://localhost:8081/subject/api/v1/subjects",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

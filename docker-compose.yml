@@ -1,0 +1,13 @@
+version: '2'
+services:
+  config-server:
+    image: config-server
+    links:
+    - servicediscovery
+    ports:
+     - "8888:8888"
+  servicediscovery:
+    image: servicediscovery
+    ports:
+     - "8761:8761"
+ 

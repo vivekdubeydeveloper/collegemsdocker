@@ -1,0 +1,6 @@
+spring security basic auth in api gateway
+username=collegeapi
+password=CollegeApi@12345
+endpoint api:http://localhost:9090/
+
+nohup java -jar -Dserver.port=8088 $PROJECT_PATH/monitoring/target/monitoring-1.0.0.jar &
