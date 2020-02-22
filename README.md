@@ -96,4 +96,15 @@ http://localhost:8765/
 GRANT ALL PRIVILEGES ON database_name.* TO 'root'@'%' identified by 'root';
 FLUSH PRIVILEGES;
 
+---remove all docker process------------
+docker ps
+docker rm -vf $(docker ps -a -q)
 
+------remove docker image-------
+docker images
+docker image rm <imageid>
+
+docker logs <containerid>
+
+---run command from docker shell
+docker exec -it <container_id_or_name> echo "I'm inside the container!"
